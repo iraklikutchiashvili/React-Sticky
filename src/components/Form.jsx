@@ -33,7 +33,7 @@ function Form(props) {
 
   return (
     <div>
-      <form className="create-note">
+      <form className="create-note" method="POST">
         {isExpanded && (
           <input
             name="title"
