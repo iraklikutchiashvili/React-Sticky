@@ -15,7 +15,7 @@ body {
 
 header {
   background-color: #ff8300;
-  margin: auto -16px;
+  margin: auto -32px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
