@@ -9,7 +9,7 @@ import axios from "axios";
 
 const App = () => {
   const client = axios.create({
-    baseURL: env.API_URL,
+    baseURL: process.env.REACT_APP_API_URL,
     headers: {
       "content-type": "application/x-www-form-urlencoded;charset=utf-8",
     },
@@ -18,7 +18,7 @@ const App = () => {
   const [notesArr, setNotesArr] = useState([]);
 
   useEffect(() => {
-    client.get("/notes").then((response) => {
+    client.get("/").then((response) => {
       setNotesArr(response.data);
     });
   }, []);
@@ -32,7 +32,7 @@ const App = () => {
   const deleteNote = (id) => {
     axios({
       method: "delete",
-      url: env.API_URL,
+      url: process.env.REACT_APP_API_URL,
       data: qs.stringify({
         _id: id,
       }),
@@ -49,7 +49,7 @@ const App = () => {
 
   const addNotes = (title, content) => {
     client
-      .post("/notes", {
+      .post("/", {
         title: title,
         content: content,
       })
