@@ -3,7 +3,7 @@
 
 ## My process
 
-my first MERN stack web app. It's an imitation of sticky papers. In order to render notes you need to fill in both title
+My first MERN stack web app. It's an imitation of sticky papers. In order to render notes you need to fill in both title
 and content inputs. Practiced and demonstrated my abilities in technologies such as Mongodb Expressjs Reactjs Nodejs.
 
 ## Built with
